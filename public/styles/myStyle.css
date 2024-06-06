@@ -25,6 +25,10 @@ body {
 
 /* homePage */
 
+#temp{
+  margin-left: 1rem !important;
+}
+
 .homepagetext{
   height: 90vh;
 }
