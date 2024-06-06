@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="icon" href="images/icon.png" />
+    <title>Blogs &#128240;</title>
+  </head>
+  <body class="body">
+    <div class="cursor"></div>
+    <%- include('partials/navbar.ejs') %>
+
+    <div
+      class="container d-flex justify-content-center align-items-center blogbox"
+    >
+      <div class="row row-cols-1 row-cols-md-4 g-4 blogcard">
+        <% for( let index = 0; index < 4; index++ ) { %>
+        <div class="col customcard">
+          <div class="card h-100" style="background-color: black">
+            <img src="images/blog1.jpg" class="card-img-top" alt="..." />
+            <div
+              class="card-body"
+              style="
+                background-color: rgb(0, 0, 0);
+                color: #ada0a0;
+                text-align: center;
+                font-family: 'Alata';
+              "
+            >
+              <h5
+                class="card-title"
+                style="
+                  font-size: 1.3rem;
+                  font-weight: 700;
+                  letter-spacing: 0.1rem;
+                "
+              >
+                Blog Title
+              </h5>
+              <p
+                class="card-text"
+                style="
+                  color: white;
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 0.6;
+                "
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC.
+              </p>
+              <button class="btn" style="border: 1px solid #ada0a0">
+                <a href="/blogs/1" style="text-decoration: none; color: #212121"
+                  >Read More</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="icon" href="/images/icon.png" />
+    <title>Web &#128223;</title>
+  </head>
+  <body class="body">
+    <div class="cursor"></div>
+    <%- include('partials/navbar.ejs') %>
+
+    <p
+      class="mt-5"
+      style="text-align: center; color: #ada0a0; text-decoration: underline"
+    >
+      Web Development Projects
+    </p>
+    <div
+      class="container d-flex justify-content-center align-items-center datacard"
+    >
+      <div
+        class="row row-cols-1 row-cols-md-3 g-4"
+        style="height: 70vh; overflow: auto"
+      >
+        <% for( let index = 0; index < 3; index++ ) { %>
+        <div class="col customcard">
+          <div class="card h-100" style="background-color: black">
+            <img
+              src="/images/project2.jpg"
+              class="card-img-top"
+              alt="..."
+              height="210rem"
+            />
+            <div
+              class="card-body"
+              style="
+                background-color: rgb(0, 0, 0);
+                color: #ada0a0;
+                text-align: center;
+                font-family: 'Alata';
+              "
+            >
+              <h5
+                class="card-title"
+                style="
+                  font-size: 1.1rem;
+                  font-weight: 700;
+                  letter-spacing: 0.1rem;
+                "
+              >
+                Project Title
+              </h5>
+              <p
+                class="card-text"
+                style="
+                  color: white;
+                  font-size: 0.8rem;
+                  letter-spacing: 0.1rem;
+                  opacity: 0.6;
+                "
+              >
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature
+              </p>
+              <button class="btn" style="border: 1px solid #ada0a0">
+                <a href="/blogs/1" style="text-decoration: none; color: #212121"
+                  >Github Link</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+    </div>
+
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>

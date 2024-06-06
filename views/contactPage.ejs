@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="icon" href="images/icon.png" />
+    <title>Connect &#128383;</title>
+  </head>
+  <body class="body">
+    <div class="cursor"></div>
+    <%- include('partials/navbar.ejs') %>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="height: 90vh"
+    >
+      <div
+        class="container d-flex justify-content-center align-items-center contactcard"
+      >
+        <form action="/" method="post">
+          <div class="mb-4">
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="Name"
+              style="font-family: 'Alata'; padding-left: 2rem"
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+              style="font-family: 'Alata'; padding-left: 2rem"
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="form-control"
+              name="message"
+              placeholder="Write your query here..."
+              id="floatingTextarea2"
+              style="height: 7rem; font-family: 'Alata'; padding-left: 2rem"
+            ></textarea>
+          </div>
+          <div class="container" style="text-align: center">
+            <button type="submit" class="btn">Send Message</button>
+            <hr />
+            <div class="text-center mt-3 mediaicons">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="text-white mx-2"
+                style="opacity: 50%"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/kabhishek.pkl/"
+                target="_blank"
+                class="text-white mx-2"
+                style="opacity: 50%"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/kumar-abhishek-629303216/"
+                target="_blank"
+                class="text-white mx-2"
+                style="opacity: 50%"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>

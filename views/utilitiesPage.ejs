@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="icon" href="images/icon.png">
+    <title>Utilities &#128188;</title>
+  </head>
+  <body class="body">
+    <div class="cursor"></div>
+    <%- include('partials/navbar.ejs') %>
+
+    <div
+      class="container d-flex justify-content-center align-items-center"
+    >
+      <div
+        class="container my-4 d-flex justify-content-center align-items-center utilitiesback"
+      >
+        <div class="row" style="width: 80vw;">
+          <% for( let index = 1; index <= 18; index++ ) { %>
+          <div class="col-md-2 col-sm-4 col-6 mb-4">
+            <a data-toggle="tooltip" title=<%= logo[index-1] %>>
+            <img
+              src="images/logo/<%= index %>.png"
+              alt="Image"
+              width="100rem"
+              class="logoimage"
+            />
+          </a>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>

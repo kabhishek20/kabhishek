@@ -1,0 +1,317 @@
+/* Alata, Paytone One Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Paytone+One&display=swap");
+
+/* Background Image and handling Overflow */
+body {
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* errorPage */
+.error {
+  width: 60vw;
+  background-color: black !important;
+  height: 50vh !important;
+}
+
+.error h5{
+  color: #f6f6f6;
+}
+
+/* homePage */
+
+.homepagetext{
+  height: 90vh;
+}
+
+.homepagetext h5{
+  font-family: 'Paytone One', sans-serif;
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 4%;
+}
+
+.homepagetext p{
+  font-family: 'Alata', sans-serif;
+  color: #ada0a0;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+}
+
+.homepagetext a{
+  background-color: #ada0a0;
+  font-family: 'Alata';
+  font-size: 1rem;
+  color: black;
+}
+
+.homepagetext a:hover{
+background-color: transparent;
+color:#ada0a0;
+transition: 0.5s;
+}
+
+
+/* Navbar */
+
+.navbar {
+  background-color: black;
+}
+
+.navhead {
+  color: #f6f6f6 !important;
+  font-family: "Alata", sans-serif;
+}
+
+.nav-item a {
+  color: #ada0a0;
+  font-family: "Alata", sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.nav-item a:hover {
+  color: black;
+  background-color: #ada0a0;
+  transition: 0.5s;
+}
+
+/* aboutPage */
+
+.about{
+  height: 90vh;
+  width:70vw !important;
+}
+
+.aboutcard{
+  height: 70vh !important;
+  background-color: black !important;
+  overflow: auto;
+  border-radius: 5% !important;
+}
+
+.aboutcard div{
+  color: #ada0a0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Alata';
+  line-height: 2.5rem;
+  letter-spacing: 0.1rem;  
+}
+
+/* blogPage */
+
+.blogbox{
+  height: 90vh;
+}
+
+.blogcard{
+  height: 70vh;
+  overflow: auto;
+}
+
+
+.contactcard{
+  height: 75vh;
+  background-color: black;
+  border-radius: 5%;
+  width: 70vw !important;  
+}
+
+.contactcard form{
+  width: 50vw;
+}
+
+.contactcard button{
+  font-family: 'Alata';
+  background-color: #ada0a0;
+  color: black;
+  padding: 5px 15px;  
+}
+
+.contactcard button:hover{
+  background-color: transparent;
+  color: #ada0a0;
+  transition: 0.5s;
+}
+
+/* dataScience Page, gamedevelopment Page */
+
+.datacard{
+  height: 75vh;
+}
+
+.customcard button:hover{
+  background-color: #ada0a0;
+  color: black;
+  transition: 0.3s;
+}
+
+.customcard:hover{
+  transform: scale(1.05);
+  transition: 0.6s;
+}
+
+
+/* errorPage */
+.font-1 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 5rem;
+  letter-spacing: 4%;
+}
+
+.font-2 {
+  font-family: "Alata", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 4%;
+  color: #ada0a0;
+}
+
+/* utilities Page */
+
+.utilitiesback{
+  background-color: black;
+  height: 80vh;
+  text-align: center;
+  border-radius: 5%;
+  overflow: auto;  
+}
+
+.logoimage:hover{
+  transform: scale(1.2);
+  transition: 0.6s;
+  opacity: 70%;
+}
+
+.tooltip > .tooltip-inner {
+  background-color: black;
+  color: #ada0a0;
+  font-family: 'Alata';
+  font-size: 1rem;
+}
+
+/* Preloader */
+
+
+#preloader{
+  background: url(/images/preloader/preloader.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+
+/* Media Queries */
+
+
+
+@media screen and (max-width: 700px) {
+  .font-1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .homepagetext h5 {
+    font-size: 2rem;
+  }
+  .homepagetext p {
+    letter-spacing: 8%;
+  }
+  .homepagetext a {
+    font-size: 0.8rem;
+  }
+
+  .about {
+    width: 90vw !important;
+  }
+
+  .aboutcard div {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .blogbox {
+    width: 80vw !important;
+  }
+
+  .contactcard {
+    width: 90vw !important;
+  }
+  
+  .contactcard form {
+    width: 70vw;
+  }
+
+  .font-1 {
+    font-size: 2rem;
+  }
+
+  .font-2 {
+    font-size: 0.8rem;
+    letter-spacing: 2%;
+  }
+
+  #preloader {
+    background-size: 50%;
+  }
+}
+
+
+
+/* Custom Cursor */
+
+
+.cursor {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  background: yellow;
+  opacity: 50%;
+  pointer-events: none;
+  z-index: 111;
+  border: 3px solid white;
+  transition: all 0.2s ease-out;
+  animation: moveCursor1 0.5s infinite alternate;
+}
+
+@keyframes moveCursor1 {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+@keyframes moveCursor2 {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+

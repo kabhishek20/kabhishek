@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <link rel="icon" href="images/icon.png" />
+    <title>Kumar &#128526;</title>
+  </head>
+  <body class="body">
+    <div id="preloader"></div>
+
+    <div class="cursor"></div>
+    <%- include('partials/navbar.ejs') %>
+
+    <div
+      class="container d-flex justify-content-start align-items-center homepagetext"
+      style="margin: 0"
+    >
+      <div class="card bg-transparent ms-0">
+        <div class="card-body ms-4">
+          <h5 class="card-title">Hi, I'm Abhishek!</h5>
+          <p class="card-text">
+            basically someone who loves
+            <span id="typingText" style="color: rgb(221, 221, 40)"
+              >Data Science</span
+            >
+          </p>
+          <a href="/blogs" class="btn me-3">Read Blogs</a>
+          <a href="/contacts" class="btn">Send Message</a>
+        </div>
+      </div>
+    </div>
+
+    <%- include('partials/script.ejs') %>
+  </body>
+</html>
