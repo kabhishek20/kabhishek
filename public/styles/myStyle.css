@@ -86,6 +86,7 @@ transition: 0.5s;
   transition: 0.5s;
 }
 
+
 .navbar li{
   text-align: center;
 }
@@ -250,6 +251,10 @@ transition: 0.5s;
 
   .cursor {
     display: none;
+  }
+
+  .body {
+    background-image: url("/images/light.jpg");
   }
 }
 
