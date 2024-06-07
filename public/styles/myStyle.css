@@ -12,9 +12,29 @@ body {
   overflow: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(46, 46, 46); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+
 /* errorPage */
 .error {
-  width: 60vw;
+  width: 80vw;
   background-color: black !important;
   height: 50vh !important;
 }
