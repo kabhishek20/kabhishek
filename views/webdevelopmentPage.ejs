@@ -26,7 +26,7 @@
         <div class="col customcard">
           <div class="card h-100 customcardfirst">
             <img
-              src="/images/project2.jpg"
+              src="/images/web/thumbnail<%= index+1 %>.jpg"
               class="card-img-top"
               alt="..."
               height="210rem"
@@ -48,7 +48,7 @@
                   letter-spacing: 0.1rem;
                 "
               >
-                Project Title
+                <%= web_title[index] %>
               </h5>
               <p
                 class="card-text"
@@ -59,11 +59,10 @@
                   opacity: 0.6;
                 "
               >
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature
+              <%= web_about[index] %>
               </p>
               <button class="btn" style="border: 1px solid #ada0a0">
-                <a href="/blogs/1" style="text-decoration: none; color: #212121"
+                <a target="_blank" href="<%= web_link[index] %>" style="text-decoration: none; color: #212121"
                   >Github Link</a
                 >
               </button>

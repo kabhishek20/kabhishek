@@ -20,6 +20,24 @@ const data_link =[
   'https://github.com/kabhishek20/Realtime_Facial_Emotion_Detection'
 ]
 
+const web_title = [
+  'Blog With Kumar',
+  'Know about Kumar',
+  'Chat with Kumar',
+]
+
+const web_about =[
+  'A simple blogging website where you can read blogs written by Kumar. You can also write your own blog and post it on the website.',
+  'A website where you can know about Kumar. You can know about his likes, hobbies, projects, and the fields he is interested in.',
+  'A chatting application where you can chat with Kumar. You can ask him about his projects, hobbies, and the fields he is interested in.'
+]
+
+const web_link =[
+  'https://github.com/kabhishek20/blogg',
+  'https://github.com/kabhishek20/kabhishek',
+  '/blogs/1'
+]
+
 
 router.route('/datascience')
 .get((req, res) => {
@@ -34,7 +52,13 @@ router.route('/datascience')
 
 router.route('/webdevelopment')
 .get((req, res) => {
-  res.render('webdevelopmentPage')
+  res.render('webdevelopmentPage',
+    {
+      web_title: web_title,
+      web_about: web_about,
+      web_link: web_link
+    }
+  )
 })
 
 router.route('/gamedevelopment')
